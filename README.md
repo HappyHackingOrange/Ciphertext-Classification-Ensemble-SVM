@@ -28,3 +28,10 @@ Here are the steps to employ the technique:
 2. For each cipher type, visually select a pair of feature variables to separate the cipher type from all other types as much as possible.
 3. Train and test each of the binary SVM classifiers using 5-fold cross-validation. Each classifier model calculates a probability for the ciphertext to belong to that cipher type.  
 4. Select the cipher type with the maximum probability to be the choosen cipher type for the ciphertext.
+
+## Feature Extraction
+
+There are different ways which a ciphertext can be measured.  For this project, 11 characteristic features were extracted from each ciphertext:
+
+Feature | Abbreviation | Description
+------- | ------------ | -----------
