@@ -66,7 +66,7 @@ With this plot five pairs of features were visually selected in which each pair 
 
 ## Results
 
-The ensemble learning technique was applied on ten datasets of 1000 ciphertexts each, each with varying lengths (number of characters) ranging from 100 to 1000 with increment of 100, using 5-fold cross-validation.  Shown below are confusion matrices to describe the performance of this technique, focusing only on lengths of 1000 then 100.  
+The ensemble learning technique was applied on ten datasets of 1000 ciphertexts each, each with varying lengths (number of characters) ranging from 100 to 1000 with increment of 100, using 5-fold cross-validation.  Shown below are confusion matrices to describe the performance of this technique, focusing only on lengths of 1000 then 100:
 
 <!---![Confusion matrix with length of 1000](/images/cm1000.png) ![Confusion matrix with length of 100](/images/cm100.png)--->
 <p align="center">
@@ -80,7 +80,7 @@ The ensemble learning technique was applied on ten datasets of 1000 ciphertexts 
   </div>
 </p>
 
-Training on a dataset containing ciphertexts of length 1000 resulted an average accuracy of 100%, while training on other dataset containing ciphertexts of length 100 resulted an average accuracy of 84.4%.  Shown below is an accuracy-over-length plot, ranging from length of 100 to 1000 with increment of 100.
+Training on a dataset containing ciphertexts of length 1000 resulted an average accuracy of 100%, while training on other dataset containing ciphertexts of length 100 resulted an average accuracy of 84.4%.  Shown below is an accuracy-over-length plot, ranging from length of 100 to 1000 with increment of 100:
 
 <!---![Accuracy over length plot](/images/accuracy_plot_svm.png)--->
 <p align="center">
@@ -89,7 +89,9 @@ Training on a dataset containing ciphertexts of length 1000 resulted an average 
 
 Notice that at length of 100, Hill and Vigenère ciphers often get mixed up with each other.  This problem start to emerge at around length of 200, as shown in the accuracy over legnth plot.
 
+## Improvements
 
+It was observed that in generalized pairs plot for ciphertext length of 100, the Vigenere and Hill clusters got blended together that it became hard to distinguish between those ciphers.  The MIC feature was the main problem—in which it kept the accuracy rate around 70% for both cipher types.  This can be improved by extracting different kinds of features not yet experimented in this project or try different machine learning techniques.
 
 ## Author
 
