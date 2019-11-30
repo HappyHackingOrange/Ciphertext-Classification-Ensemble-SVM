@@ -19,7 +19,7 @@ Note that in each case, the plaintext consists only of alphabetic characters A t
 
 ## Technique: Ensemble learning with SVM
 
-This technique employs a divide-and-conquer strategy by aggregating a number of binary SVM classifiers trained on selected features.  Shown below is a diagram of a system for classifying cipher types:
+This technique employs a divide-and-conquer strategy by aggregating a number of binary SVM classifiers trained on selected features.  Shown below is a diagram of a system for classifying the ciphertexts:
 
 ![Ensemble SVM System Diagram](/images/ensembleSVM_system.png)
 
