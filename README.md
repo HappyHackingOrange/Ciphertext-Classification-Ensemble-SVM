@@ -51,7 +51,7 @@ Next thing was to create a special kind of plot called generalized pairs plot, a
 
 ![Generalized Pairs Plot](/images/generalized_pairs_plot_1000.png)
 
-With this plot five pairs of features were visually selected in which each pair isolates a cipher type from all other types.  It is ensured that a cluster of one cipher type is farthest from all other clusters without any overlaps if possible.  More importantly, the width of all hyperplanes were maximized.  The table shown below demostrates the procedure of selecting five pairs of features so that for each cipher type, the hyperplane width was maximized from the target cipher type from all other types:
+With this plot five pairs of features were visually selected in which each pair isolates a cipher type from all other types.  It is ensured that a cluster of one cipher type is farthest from all other clusters without any overlaps if possible.  In other words, the width of all hyperplanes were maximized.  The table shown below demostrates the procedure of selecting five pairs of features so that for each cipher type, the hyperplane width was maximized from the target cipher type from all other types:
 
 ![Selection process](/images/ensembleSVM_selection.png)
 
