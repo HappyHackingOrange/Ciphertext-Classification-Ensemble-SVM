@@ -7,7 +7,7 @@ My goal was to develop a machine learning based technique that enables to classi
 So, for this project I choose ensembling learning with SVM to solve the challenge—and this approach won as the best method across all Machine Learning courses in Spring 2019 semester, in term of getting best accuracy at lowest amount of ciphertext used.
 
 ## Data
-1000 ciphertest messages, each of length 1000, were generated for each of the following classic ciphers:
+Ten datasets of 1000 ciphertest messages each, each with varying ciphertext lengths ranging from 100 to 1000 at increment of 100, were generated for each of the following classic ciphers:
 
 * Simple substitution
 * Vigenère
