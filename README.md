@@ -52,21 +52,36 @@ Single letter-digraph discrepancy score | `SDD` | for each character, get scores
 
 Next thing was to create a special kind of plot called generalized pairs plot, as seen below, which allows us to see all possible combinations of 2 features in one place.
 
-![Generalized Pairs Plot](/images/generalized_pairs_plot_1000.png)
+<!---![Generalized Pairs Plot](/images/generalized_pairs_plot_1000.png)--->
+<p align="center">
+  <img src="/images/generalized_pairs_plot_1000.png" alt="Generalized Pairs Plot">
+</p>
 
 With this plot five pairs of features were visually selected in which each pair isolates a cipher type from all other types.  It is ensured that a cluster of one cipher type is farthest from all other clusters without any overlaps if possible.  In other words, the width of all hyperplanes were maximized.  The table shown below demostrates the procedure of selecting five pairs of features so that for each cipher type, the hyperplane width was maximized from the target cipher type from all other types:
 
-![Selection process](/images/ensembleSVM_selection.png)
+<!---![Selection process](/images/ensembleSVM_selection.png)--->
+<p align="center">
+  <img src="/images/ensembleSVM_selection.png" alt="Selection process">
+</p>
 
 ## Results
 
 The ensemble learning technique was applied on ten datasets of 1000 ciphertexts each, each with varying lengths (number of characters) ranging from 100 to 1000 with increment of 100, using 5-fold cross-validation.  Shown below are confusion matrices to describe the performance of this technique, focusing only on lengths of 1000 then 100.  
 
-![Confusion matrix with length of 1000](/images/cm1000.png) ![Confusion matrix with length of 100](/images/cm100.png)
+<!---![Confusion matrix with length of 1000](/images/cm1000.png) ![Confusion matrix with length of 100](/images/cm100.png)--->
+<p align="center">
+  <img src="/images/cm1000.png" alt="Confusion matrix with length of 1000">
+</p>
+<p align="center">
+  <img src="/images/cm100.png" alt="Confusion matrix with length of 100">
+</p>
 
 Training on a dataset containing ciphertexts of length 1000 resulted an average accuracy of 100%, while training on other dataset containing ciphertexts of length 100 resulted an average accuracy of 84.4%.  Shown below is an accuracy-over-length plot, ranging from length of 100 to 1000 with increment of 100.
 
-![Accuracy over length plot](/images/accuracy_plot_svm.png)
+<!---![Accuracy over length plot](/images/accuracy_plot_svm.png)--->
+<p align="center">
+  <img src="/images/accuracy_plot_svm.png" alt="Accuracy over length plot">
+</p>
 
 Notice that at length of 100, Hill and Vigenère ciphers often get mixed up with each other.  This problem start to emerge at around length of 200, as shown in the accuracy over legnth plot.
 
