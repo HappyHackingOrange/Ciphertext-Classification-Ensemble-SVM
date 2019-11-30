@@ -21,3 +21,4 @@ Note that in each case, the plaintext consists only of alphabetic characters A t
 
 This technique employs a divide-and-conquer strategy by aggregating a number of binary SVM classifiers trained on selected features, which the selection process will be discussed in the next section.  Shown below is a diagram of a system for classifying cipher types:
 
+![Ensemble SVM System Diagram](/images/ensembleSVM_system.png)
