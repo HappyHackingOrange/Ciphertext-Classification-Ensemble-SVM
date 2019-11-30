@@ -35,3 +35,14 @@ There are different ways which a ciphertext can be measured.  For this project, 
 
 Feature | Abbreviation | Description
 ------- | ------------ | -----------
+Number of unique characters | NUC | number of unique characters
+Chi-squared statistic of English distribution | CSS | measure of how similar the frequency distrution of the characters in a ciphertext is to the frequency distribution of English
+Index of coincidence | IC | measure of how similar a frequency distribution is to uniform distribution
+Max IC for periods 1-15 | MIC | divide cipher by period P then average the IC values of divided ciphers
+Max kappa for periods 1-15 | MKA | shift cipher P places to right then find percentage of characters that coincide with unshifted cipher
+Digraphic index of coincidence | DIC | same formula as IC but add frequency of adjacent pairs of characters from ciphertext instead of single character
+DIC for even-numbered pairs | EDI | calculate IC for pairs that start at even-numbered positions 0,2,4,etc
+Long repeat | LR | square root of percentage of 3 character repeats
+Percentage of odd-spaced repeats | ROD | percentage of odd-spaced repeats to all repeats
+Log digraph score | LDI | for each character, get scores from pre-generated table of English log diagraph scores and average them
+Single letter-digraph discrepancy score | SDD | for each character, get scores from pre-generated table of Single letter-Digraph Discrepancy scores and average them
