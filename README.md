@@ -23,8 +23,8 @@ This technique employs a divide-and-conquer strategy by aggregating a number of 
 
 ![Ensemble SVM System Diagram](/images/ensembleSVM_system.png)
 
-The steps to employ the technique are:
-1. Features were extracted from the ciphertext, which are different types of characteristic values that describe each ciphertext.
-2. For each cipher type, a pair of feature variables was visually selected to separate the cipher type from all other types as much as possible.
-3. Each of the binary SVM classifiers were trained and tested using 5-fold cross-validation. Each classifier model calculates a probability for the ciphertext to belong to that cipher type.  
-4. The cipher class with the maximum probability value is selected to be the choosen cipher type for the ciphertext.
+Here are the steps to employ the technique:
+1. Extract features from the ciphertext, which are different types of characteristic values that describe each ciphertext.
+2. For each cipher type, visually select a pair of feature variables to separate the cipher type from all other types as much as possible.
+3. Train and test each of the binary SVM classifiers using 5-fold cross-validation. Each classifier model calculates a probability for the ciphertext to belong to that cipher type.  
+4. Select the cipher type with the maximum probability to be the choosen cipher type for the ciphertext.
