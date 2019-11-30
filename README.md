@@ -30,7 +30,7 @@ Here are the steps to employ the technique:
 1. Extract features from the ciphertext, which are different types of characteristic values that describe each ciphertext.
 2. For each cipher type, visually select a pair of feature variables to separate the cipher type from all other types as much as possible.
 3. Train and test each of the binary SVM classifiers using 5-fold cross-validation. Each classifier model calculates a probability for the ciphertext to belong to that cipher type.  
-4. Select the cipher type with the maximum probability to be the choosen cipher type for the ciphertext.
+4. Select the cipher type with the maximum probability to be the choosen cipher type for the ciphertext. (Argmax selects a model that gives highest probability value out of all models)
 
 ## Feature Extraction
 
