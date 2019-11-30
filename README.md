@@ -21,7 +21,10 @@ Note that in each case, the plaintext consists only of alphabetic characters A t
 
 This technique employs a divide-and-conquer strategy by aggregating a number of binary SVM classifiers trained on selected features.  Shown below is a diagram of a system for classifying the ciphertexts:
 
-![Ensemble SVM System Diagram](/images/ensembleSVM_system.png)
+<!---![Ensemble SVM System Diagram](/images/ensembleSVM_system.png)--->
+<p align="center">
+  <src="/images/ensembleSVM_system.png" alt="Ensemble SVM System Diagram">
+</p>
 
 Here are the steps to employ the technique:
 1. Extract features from the ciphertext, which are different types of characteristic values that describe each ciphertext.
