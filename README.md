@@ -87,7 +87,7 @@ Training on a dataset containing ciphertexts of length 1000 resulted an average 
   <img src="/images/accuracy_plot_svm.png" alt="Accuracy over length plot">
 </p>
 
-Notice that at length of 100, Hill and Vigenère ciphers often get mixed up with each other.  This problem start to emerge at around length of 200, as shown in the accuracy over length plot.
+Notice that at length of 100, Hill and Vigenère ciphers often get mixed up with each other.  This problem start to diminish at around length of 200, as shown in the accuracy over length plot.
 
 ## Improvements
 
