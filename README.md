@@ -17,4 +17,7 @@ So, for this project I choose ensembling learning with SVM to solve the challeng
 
 Note that in each case, the plaintext consists only of alphabetic characters A through Z, and the same is true of the ciphertext.  For each ciphertext message which is generated, a plaintext is selected at some random initial point in the Brown Corupus and a random key is generated.  Those keys are saved so that the decryption are verified as needed.
 
-## Technique: Emsemble learning with SVM
+## Technique: Ensemble learning with SVM
+
+This technique employs a divide-and-conquer strategy by aggregating a number of binary SVM classifiers trained on selected features, which the selection process will be discussed in the next section.  Shown below is a diagram of a system for classifying cipher types:
+
