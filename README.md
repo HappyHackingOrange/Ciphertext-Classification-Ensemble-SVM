@@ -61,10 +61,10 @@ After utilizng the ensemble learning technique using 5-fold cross-validation, th
 
 Ciphertext length: 1000
 Accuracy: 100%
- | Predicted
-Actual | Simple | Vigenère | Column | Playfair | Hill
------- | ------ | -------- | ------ | -------- | ----
-Simple | 1000 | 0 | 0 | 0 | 0
+|        | Predicted                                    |
+| Actual | Simple | Vigenère | Column | Playfair | Hill |
+| ------ | ------ | -------- | ------ | -------- | ---- |
+| Simple | 1000 | 0 | 0 | 0 | 0 |
 
 otice that at length of 100, Hill and Vigenère ciphers often get mixed up with each other.  This problem start to emerge at around length of 200, as shown in the accuracy over legnth plot.
 
