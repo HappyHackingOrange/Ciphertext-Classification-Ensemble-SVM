@@ -70,10 +70,14 @@ The ensemble learning technique was applied on ten datasets of 1000 ciphertexts 
 
 <!---![Confusion matrix with length of 1000](/images/cm1000.png) ![Confusion matrix with length of 100](/images/cm100.png)--->
 <p align="center">
-  <img src="/images/cm1000.png" alt="Confusion matrix with length of 1000">
-</p>
-<p align="center">
-  <img src="/images/cm100.png" alt="Confusion matrix with length of 100">
+  <div class="row">
+    <div class="column">
+      <img src="/images/cm1000.png" alt="Confusion matrix with length of 1000">
+    </div>
+    <div class="column">
+      <img src="/images/cm100.png" alt="Confusion matrix with length of 100">
+    </div>
+  </div>
 </p>
 
 Training on a dataset containing ciphertexts of length 1000 resulted an average accuracy of 100%, while training on other dataset containing ciphertexts of length 100 resulted an average accuracy of 84.4%.  Shown below is an accuracy-over-length plot, ranging from length of 100 to 1000 with increment of 100.
