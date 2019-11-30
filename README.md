@@ -31,7 +31,7 @@ Here are the steps to employ the technique:
 
 ## Feature Extraction
 
-There are different ways which a ciphertext can be measured.  For this project, 11 characteristic features were extracted from each ciphertext:
+There are different ways which a ciphertext can be measured.  For this project, eleven characteristic features were extracted from each ciphertext:
 
 Feature | Abbreviation | Description
 ------- | ------------ | -----------
