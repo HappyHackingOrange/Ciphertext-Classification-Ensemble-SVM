@@ -55,4 +55,16 @@ With this plot five pairs of features were visually selected in which each pair 
 
 ![Selection process](/images/ensembleSVM_selection.png)
 
+## Results
 
+## Author
+
+* **Vincent Stowbunenko** - Code developer and data science applications - [HappyHackingOrange](https://github.com/HappyHackingOrange)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Hat tips to my professor of a favorite course of mine (Machine Learning), Mark Stamp, who challenged his ML classes with this problem.
