@@ -46,3 +46,9 @@ Long repeat | LR | square root of percentage of 3 character repeats
 Percentage of odd-spaced repeats | ROD | percentage of odd-spaced repeats to all repeats
 Log digraph score | LDI | for each character, get scores from pre-generated table of English log diagraph scores and average them
 Single letter-digraph discrepancy score | SDD | for each character, get scores from pre-generated table of Single letter-Digraph Discrepancy scores and average them
+
+Next thing was to create a special kind of plot called generalized pairs plot, as seen below, which allows us to see all possible combinations of 2 features in one place.
+
+![Generalized Pairs Plot](/images/generalized_pairs_plot_1000.png)
+
+With this plot five pairs of features were visually selected in which each pair isolates a cipher type from all other types.  It is ensured that a cluster of one cipher type is farthest from all other clusters without any overlaps if possible.  More importantly, the width of all hyperplanes must be maximized.
