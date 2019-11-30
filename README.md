@@ -57,6 +57,18 @@ With this plot five pairs of features were visually selected in which each pair 
 
 ## Results
 
+After utilizng the ensemble learning technique using 5-fold cross-validation, there was 100% accuracy when the length (number of characters) of all ciphertexts was set to 1000.  But at length of 100, the accuracy dropped to 84.4%.  Shown below are confusion matrices to describe the performance of this technique, for length of 1000 then 100.  N
+
+Ciphertext length: 1000
+Accuracy: 100%
+ | Predicted
+Actual | Simple | Vigenère | Column | Playfair | Hill
+------ | ------ | -------- | ------ | -------- | ----
+
+otice that at length of 100, Hill and Vigenère ciphers often get mixed up with each other.  This problem start to emerge at around length of 200, as shown in the accuracy over legnth plot.
+
+
+
 ## Author
 
 * **Vincent Stowbunenko** - Code developer and data science applications - [HappyHackingOrange](https://github.com/HappyHackingOrange)
