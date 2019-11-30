@@ -35,17 +35,17 @@ There are different ways which a ciphertext can be measured.  For this project, 
 
 Feature | Abbreviation | Description
 ------- | ------------ | -----------
-Number of unique characters | NUC | number of unique characters
-Chi-squared statistic of English distribution | CSS | measure of how similar the frequency distrution of the characters in a ciphertext is to the frequency distribution of English
-Index of coincidence | IC | measure of how similar a frequency distribution is to uniform distribution
-Max IC for periods 1-15 | MIC | divide cipher by period P then average the IC values of divided ciphers
-Max kappa for periods 1-15 | MKA | shift cipher P places to right then find percentage of characters that coincide with unshifted cipher
-Digraphic index of coincidence | DIC | same formula as IC but add frequency of adjacent pairs of characters from ciphertext instead of single character
-DIC for even-numbered pairs | EDI | calculate IC for pairs that start at even-numbered positions 0,2,4,etc
-Long repeat | LR | square root of percentage of 3 character repeats
-Percentage of odd-spaced repeats | ROD | percentage of odd-spaced repeats to all repeats
-Log digraph score | LDI | for each character, get scores from pre-generated table of English log diagraph scores and average them
-Single letter-digraph discrepancy score | SDD | for each character, get scores from pre-generated table of Single letter-Digraph Discrepancy scores and average them
+Number of unique characters | `NUC` | number of unique characters
+Chi-squared statistic of English distribution | `CSS` | measure of how similar the frequency distrution of the characters in a ciphertext is to the frequency distribution of English
+Index of coincidence | `IC` | measure of how similar a frequency distribution is to uniform distribution
+Max IC for periods 1-15 | `MIC` | divide cipher by period P then average the IC values of divided ciphers
+Max kappa for periods 1-15 | `MKA` | shift cipher P places to right then find percentage of characters that coincide with unshifted cipher
+Digraphic index of coincidence | `DIC` | same formula as IC but add frequency of adjacent pairs of characters from ciphertext instead of single character
+DIC for even-numbered pairs | `EDI` | calculate IC for pairs that start at even-numbered positions 0,2,4,etc
+Long repeat | `LR` | square root of percentage of 3 character repeats
+Percentage of odd-spaced repeats | `ROD` | percentage of odd-spaced repeats to all repeats
+Log digraph score | `LDI` | for each character, get scores from pre-generated table of English log diagraph scores and average them
+Single letter-digraph discrepancy score | `SDD` | for each character, get scores from pre-generated table of Single letter-Digraph Discrepancy scores and average them
 
 Next thing was to create a special kind of plot called generalized pairs plot, as seen below, which allows us to see all possible combinations of 2 features in one place.
 
@@ -57,16 +57,15 @@ With this plot five pairs of features were visually selected in which each pair 
 
 ## Results
 
-After utilizng the ensemble learning technique using 5-fold cross-validation, there was 100% accuracy when the length (number of characters) of all ciphertexts was set to 1000.  But at length of 100, the accuracy dropped to 84.4%.  Shown below are confusion matrices to describe the performance of this technique, for length of 1000 then 100.  N
+After utilizng the ensemble learning technique using 5-fold cross-validation, there was 100% accuracy when the length (number of characters) of all ciphertexts was set to 1000.  But at length of 100, the accuracy dropped to 84.4%.  Shown below are confusion matrices to describe the performance of this technique, for length of 1000 then 100.
 
 Ciphertext length: 1000
 Accuracy: 100%
-|        | Predicted | | | | |
-| Actual | Simple | Vigenère | Column | Playfair | Hill |
-| ------ | ------ | -------- | ------ | -------- | ---- |
-| Simple | 1000 | 0 | 0 | 0 | 0 |
 
-otice that at length of 100, Hill and Vigenère ciphers often get mixed up with each other.  This problem start to emerge at around length of 200, as shown in the accuracy over legnth plot.
+Ciphertext length: 100
+Accuracy: 84.4%
+
+Notice that at length of 100, Hill and Vigenère ciphers often get mixed up with each other.  This problem start to emerge at around length of 200, as shown in the accuracy over legnth plot.
 
 
 
