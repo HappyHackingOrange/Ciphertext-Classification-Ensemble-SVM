@@ -91,7 +91,7 @@ Notice that at length of 100, Hill and Vigenère ciphers often get mixed up with
 
 ## Improvements
 
-It was observed that in generalized pairs plot for ciphertext length of 100, the Vigenere and Hill clusters got blended together that it became hard to distinguish between those ciphers.  The MIC feature was the main problem—in which it kept the accuracy rate around 70% for both cipher types.  This can be improved by extracting different kinds of features not yet experimented in this project or try different machine learning techniques.
+It was observed that in generalized pairs plot for ciphertext length of 100, the Vigenère and Hill clusters got blended together that it became hard to distinguish between those ciphers.  The MIC feature was the main problem—in which it kept the accuracy rate around 70% for both cipher types.  This can be improved by extracting different kinds of features not yet experimented in this project or try different machine learning techniques.
 
 ## References
 
