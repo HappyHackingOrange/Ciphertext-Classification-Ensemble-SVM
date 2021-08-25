@@ -69,16 +69,18 @@ With this plot five pairs of features were visually selected in which each pair 
 The ensemble learning technique was applied on ten datasets of 1000 ciphertexts each, each with varying lengths (number of characters) ranging from 100 to 1000 with increment of 100, using 5-fold cross-validation.  Shown below are confusion matrices to describe the performance of this technique, focusing only on lengths of 1000 then 100:
 
 <!---![Confusion matrix with length of 1000](/images/cm1000.png) ![Confusion matrix with length of 100](/images/cm100.png)--->
-<p align="center">
-  <div class="row">
-    <div class="column">
+<div class="row">
+  <div class="column">
+    <p align="center">
       <img src="/images/cm1000.png" alt="Confusion matrix with length of 1000">
-    </div>
-    <div class="column">
-      <img src="/images/cm100.png" alt="Confusion matrix with length of 100">
-    </div>
+    </p>
   </div>
-</p>
+  <div class="column">
+    <p align="center">
+      <img src="/images/cm100.png" alt="Confusion matrix with length of 100">
+    </p>
+  </div>
+</div>
 
 Training on a dataset containing ciphertexts of length 1000 resulted an average accuracy of 100%, while training on other dataset containing ciphertexts of length 100 resulted an average accuracy of 84.4%.  Shown below is an accuracy-over-length plot, ranging from length of 100 to 1000 with increment of 100:
 
