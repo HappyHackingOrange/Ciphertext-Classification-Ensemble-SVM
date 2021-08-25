@@ -15,7 +15,7 @@ Ten datasets of 5,000 ciphertext messages each (1,000 each cipher), each dataset
 * Playfair
 * Hill cipher
 
-Note that in each case, the plaintext consists only of alphabetic characters A through Z, and the same is true of the ciphertext.  For each ciphertext message which is generated, a plaintext is selected at some random initial point in the Brown Corupus and a random key is generated.  Those keys are saved so that the decryption are verified as needed.
+Note that in each case, the plaintext consists only of alphabetic characters A through Z, and the same is true of the ciphertext.  For each ciphertext message which is generated, a plaintext is selected at some random initial point in the Brown Corpus and a random key is generated.  Those keys are saved so that the decryption are verified as needed.
 
 ## Technique: Ensemble learning with SVM
 
