@@ -94,6 +94,5 @@ ggpairs(
   print(g)
 }
 
-# Train data set using 
 
 
